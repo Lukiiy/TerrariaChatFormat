@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Terraria Chat Formatter</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <meta name="description" content="A tool to format Terraria strings (colors, item displays, gradients...)">
+    <link rel="author" href="Lukiiy">
+</head>
+<body>
+    <h1>Terraria Chat Formatter</h1>
+
+    <noscript style="color: #eb4034;">JavaScript is disabled, which is required!</noscript>
+
+    <div class="box">
+        <menu>
+            <section>
+                <input type="color" id="color" value="#fff014" />
+                <button id="colorBtn">Color</button>
+            </section>
+
+            <section>
+                <input id="itemId" type="number" placeholder="Item ID" />
+                <input id="prefix" type="number" placeholder="Prefix" />
+                <input id="stack" type="number" placeholder="Stack" />
+                <button id="itemBtn">Item</button>
+            </section>
+
+            <section>
+                <input type="color" id="gradFrom" value="#ff0000" />
+                <input type="color" id="gradTo" value="#0000ff" />
+                <button id="gradBtn">Gradient</button>
+            </section>
+        </menu>
+
+        <textarea id="msg" placeholder="Input text here :)"></textarea>
+    </div>
+
+    <p id="warning" aria-hidden="true" style="color: #eb4034; display: none;"></p>
+    <small><a href="https://lukiiy.github.io/TerrariaChatFormat">Source Code</a></small>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
